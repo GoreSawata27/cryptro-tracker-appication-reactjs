@@ -1,0 +1,125 @@
+img {
+    height: 40px;
+    margin-right: 8px;
+    width: auto;
+  }
+  
+  .img-symbol {
+    display: flex;
+    align-items: center;
+  }
+  
+  .coin-name {
+    display: flex;
+    align-items: center;
+  }
+  
+
+  
+  /* Loadmore button */
+  
+  .btn {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  
+  /* Favorite button */
+  .Fav-button {
+    border: none;
+    padding: 5px;
+    background-color: #9ecae7;
+    font-weight: bold;
+  }
+  
+  .Fav-button:hover {
+    transform: scale(1.1);
+    color: red;
+  }
+
+  .loadMore {
+    height: 45px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 0 15px ;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+  
+  table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    background-color: #3498db;
+  }
+  
+  @media screen and (max-width: 800px) {
+    table {
+      border: 0;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    table td::before {
+      content: attr(data-aria-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+    .coin-name {
+      display: block;
+      
+    }
+  }
+  
+  
