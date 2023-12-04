@@ -5,6 +5,8 @@ import Navbar from "./Components/Navbar";
 
 function App() {
   const [coins, setCoins] = useState([]);
+
+
   const [loadMore, setLoadMore] = useState(20);
   const [fevorite, setFevorite] = useState([]);
   const [loading, setLoading] = useState(true);
